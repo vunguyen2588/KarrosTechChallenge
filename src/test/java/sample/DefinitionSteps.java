@@ -38,109 +38,109 @@ public class DefinitionSteps extends Driver{
 	
 	@And ("^I login with username (.*) and password (.*)$")
 	public void loginWebApplication(String username, String password) {
-		Login objLogin = new Login(obj);
+		LoginPage objLogin = new LoginPage(obj);
 		objLogin.loginToApplication(username, password);
 	}
 	
 	@And ("^I sign out the application$")
 	public void signOutWebApplication() {
-		Login objLogin = new Login(obj);
+		LoginPage objLogin = new LoginPage(obj);
 		objLogin.signOutApplication();
 	}
 	
 	@And ("^I should see login page$")
 	public void verifyLoginPage() {
-		Login objLogin = new Login(obj);
+		LoginPage objLogin = new LoginPage(obj);
 		objLogin.verifyLoginPage();
 	}
 	
 	@And ("^I should see Parent Portal page is (.*)$")
 	public void verifyParentPortalPage(String status) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.verifyParentPortalPage(status);
 	}
 	
 	@And ("^I click on header name (.*)$")
 	public void clickHeaderName(String headerName) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.clickHeader(headerName);
 	}
 	
 	@Then ("^I should see (request status|requester|first name|last name|date submitted|date of birthday) with (ascending order|descending order)$")
 	public void seeRequestStatusDecrease(String header, String order) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.verifyListSortedOrder(header, order);
 	}
 	
 	@And ("^I click on Filters button$")
 	public void clickOnFiltersButton() {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.clickOnFiltersButton();
 	}
 	
 	@And ("^I select Request Status (.*)$")
 	public void selectRequestStatus(String requestStatus) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.selectRequestStatus(requestStatus);
 	}
 	
 	@And ("^I enter email (.*)$")
 	public void enterEmail(String email) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.enterEmail(email);
 	}
 	
 	@And ("^I enter Student ID (.*)$")
 	public void enterStudentID(String studentID) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.enterStudentID(studentID);
 	}
 	
 	@And ("^I enter Student First Name (.*)$")
 	public void enterStudentFirstName(String firstName) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.enterStudentFirstName(firstName);
 	}
 	
 	@And ("^I enter Student Last Name (.*)$")
 	public void enterStudentLastName(String lastName) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.enterStudentLastName(lastName);
 	}
 	
 	@And ("^I click Apply Filters button$")
 	public void clickApplyFilters() {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.clickApplyFilters();
 	}
 	
 	@And ("^I should see Request Status is (.*)$")
 	public void verifyRequestStatus(String requestStatus) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.verifyRequestStatus(requestStatus);
 	}
 	
 	@And ("^I should see Requester is (.*)$")
 	public void verifyRequesterContainsEmail(String email) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.verifyRequesterContainsEmail(email);
 	}
 	
 	@And ("^I should see Student ID is (.*)$")
 	public void verifyStudentID(String studentID) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.verifyStudentID(studentID);
 	}
 	
 	@And ("^I should see Student First Name is (.*)$")
 	public void verifyStudentFistName(String firstName) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.verifyStudentFirstName(firstName);
 	}
 	
 	@And ("^I should see Student Last Name is (.*)$")
 	public void verifyStudentLastName(String lastName) {
-		ParentPortal parentPortal = new ParentPortal(obj);
+		ParentPortalPage parentPortal = new ParentPortalPage(obj);
 		parentPortal.verifyStudentLastName(lastName);
 	}
 	

@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Login extends Common{
+public class LoginPage extends Common{
 	WebDriver driver;
 	By userName 	= By.id("formHorizontalEmail");
 	By password 	= By.id("formHorizontalPassword");
@@ -12,7 +12,7 @@ public class Login extends Common{
 	By accountName	= By.cssSelector("#basic-nav-dropdown");
 	By signOut		= By.xpath("//a[text()='Sign Out']");
 	
-	public Login(WebDriver driver) {
+	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 

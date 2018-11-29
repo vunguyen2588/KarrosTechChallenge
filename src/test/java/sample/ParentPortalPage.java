@@ -8,7 +8,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ParentPortal {
+public class ParentPortalPage {
 	WebDriver driver;
 	String strRequestStatus = "//th[text()='%s']";
 	By parentPortalEle 		= By.xpath("//a[contains(text(),'Parent Portal')]");
@@ -30,7 +30,7 @@ public class ParentPortal {
 	String requestStatus 	= "//div[@class='ct-drop-group dropdown btn-group']/p[text()='%s']";
 	String statusItem 		= "//div[@class='ct-drop-group dropdown open btn-group']//ul[@class='dropdown-menu']//p[text()='%s']";
 
-	public ParentPortal(WebDriver driver) {
+	public ParentPortalPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
